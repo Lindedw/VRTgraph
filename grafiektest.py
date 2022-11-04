@@ -5,10 +5,10 @@ import numpy as np
 import seaborn as sns
 sns.set()
 
-df_url = "https://github.com/Lindedw/VRTgraph/ilc_peps01n.tsv.gz"
-df= pd.read_table(df_url, sep='\t', na_values=": ")
+df_url = "https://github.com/Lindedw/VRTgraph/blob/main/armoede.csv"
+df= pd.read_csv(df_url, sep='\t', na_values=": ")
 
-df.to_csv('C:/Users/ljdwande/downloads/armoede.csv')
+
 cols = ['2021 ', '2020 ', '2019 ', '2017 ', '2016 ']
 df[cols] = df[cols].apply(lambda x: x.str.rstrip(" bp"))
 df[cols] = df[cols].apply(lambda x: x.astype(float))
