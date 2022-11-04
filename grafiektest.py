@@ -72,4 +72,4 @@ plt.xlabel('Percentage of total population')
 plt.suptitle('Risk of poverty or social exclusion in EU countries')
 plt.title("Source: Eurostat 2021")
 plt.show()
-bar
+plt.savefig('Riskofpoverty.png')
