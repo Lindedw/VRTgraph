@@ -5,8 +5,8 @@ import numpy as np
 import seaborn as sns
 sns.set()
 
-df_url = "https://github.com/Lindedw/VRTgraph/blob/main/armoede.csv"
-df= pd.read_csv(df_url, sep='\t', na_values=": ")
+df_url = "https://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing?file=data/ilc_peps01n.tsv.gz"
+df = pd.read_table(df_url, sep='\t', na_values=": ")
 
 
 cols = ['2021 ', '2020 ', '2019 ', '2017 ', '2016 ']
